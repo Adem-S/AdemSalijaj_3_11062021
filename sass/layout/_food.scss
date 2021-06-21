@@ -9,6 +9,7 @@
   opacity: 0;
   width: 100%;
   flex: 1;
+  @include box-shadow;
 }
 
 .food:hover {

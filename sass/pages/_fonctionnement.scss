@@ -13,6 +13,7 @@
   position: relative;
   margin-left: 0.5em;
   transition: color 0.3s ease-in-out;
+  @include box-shadow;
   span {
     margin-right: 1.3em;
     width: 1em;

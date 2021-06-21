@@ -8,4 +8,11 @@
   min-width: 12em;
   max-width: fit-content;
   text-align: center;
+  transition: opacity 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  @include box-shadow;
+}
+
+.button:hover {
+  opacity: 0.9;
+  @include box-shadow(0.4);
 }

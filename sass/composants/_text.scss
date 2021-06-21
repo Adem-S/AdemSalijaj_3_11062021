@@ -1,0 +1,20 @@
+.text {
+  font-size: 1em;
+}
+
+.text--big {
+  font-size: 1.1em;
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--gray {
+  font-weight: 300;
+  color: $color-footer;
+}
+
+.text--center {
+  text-align: center;
+}

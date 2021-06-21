@@ -1,0 +1,28 @@
+.title {
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: 0.5em 0;
+}
+
+.title--font {
+  font-family: "Shrikhand";
+}
+
+.title--light {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.title--underline {
+  position: relative;
+}
+
+.title--underline::before {
+  position: absolute;
+  content: "";
+  width: 2.5em;
+  height: 0.15em;
+  bottom: 10%;
+  background-color: $color-tertiary;
+}

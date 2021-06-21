@@ -1,0 +1,38 @@
+.spinner {
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  animation: disappear 0s forwards 1.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 5em;
+    color: white;
+    animation: rotate 1.5s linear;
+    color: $color-secondary;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(2turn);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100%) scale(0);
+  }
+}

@@ -1,0 +1,102 @@
+.food {
+  display: flex;
+  background-color: white;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  overflow: hidden;
+  animation: appear 1s ease-in-out forwards;
+  opacity: 0;
+  width: 100%;
+  flex: 1;
+}
+
+.food:hover {
+  .food__animation {
+    transform: translateX(0);
+    span {
+      animation: rotate 0.6s ease-in-out;
+    }
+  }
+  .food__info p:nth-child(2) {
+    transform: translateX(0);
+  }
+}
+
+.food__text {
+  padding: 0.8em;
+  width: calc(100% - 3.5em);
+}
+
+.food__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2em;
+  p {
+    display: block;
+    &:first-child {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 90%;
+    }
+    &:nth-child(2) {
+      width: 1em;
+      justify-self: flex-end;
+      margin: 0 0.5em;
+      transform: translateX(3em);
+      transition: transform 0.7s;
+      font-weight: 700;
+    }
+  }
+}
+
+.food__animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-tertiary;
+  border-radius: 0 1em 1em 0;
+  transform: scale(1) translateX(100%);
+  min-width: 3.5em;
+  transition: transform 0.8s;
+  span {
+    color: white;
+    font-size: 1.3em;
+  }
+}
+
+.food--anim1 {
+  animation-delay: 0.2s;
+}
+
+.food--anim2 {
+  animation-delay: 0.4s;
+}
+
+.food--anim3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

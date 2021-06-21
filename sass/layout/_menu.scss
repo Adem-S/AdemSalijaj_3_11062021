@@ -1,0 +1,9 @@
+.menu {
+  border-radius: 2em 2em 0 0;
+  background-color: $color-background;
+  &__title {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+  }
+}

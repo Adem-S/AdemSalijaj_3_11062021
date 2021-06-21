@@ -1,0 +1,11 @@
+.button {
+  display: block;
+  color: white;
+  padding: 1em 1.2em;
+  border-radius: 2em;
+  background: linear-gradient(170deg, $color-secondary, $color-primary);
+  margin: 2em auto;
+  min-width: 12em;
+  max-width: fit-content;
+  text-align: center;
+}

@@ -1,30 +1,38 @@
 .heart {
   position: relative;
+
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  margin-right: 1em;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .heart:hover {
-  .heart--full {
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.5s;
+  .heart__full {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.3s cubic-bezier(0.46, -0.04, 0.69, 1.38),
+      opacity 0.2s cubic-bezier(0.76, -0.08, 1, 1);
+  }
+  .heart__empty {
+    transform: scale(0.85);
   }
 }
-
-.heart--empty {
-  font-size: 1.5em;
-  top: 50%;
-  right: 50%;
+.heart__empty {
+  top: 0;
+  right: 0;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transition: transform 0.2s cubic-bezier(0.04, 0.7, 0.68, 1.1);
 }
 
-.heart--full {
+.heart__full {
   font-weight: 400;
-  font-size: 1.5em;
-  top: 50%;
-  right: 50%;
+  top: 0;
+  right: 0;
   position: absolute;
-  transform: translate(-50%, -50%) scale(0);
-
-  overflow: hidden;
+  transform: scale(0);
+  opacity: 0;
   color: #000;
 }

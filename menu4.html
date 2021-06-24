@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood - Le délice des sens</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+    <script
+      src="https://kit.fontawesome.com/9acfb66856.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><span class="fas fa-arrow-left"></span></a>
+      <img src="design/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+    </header>
+
+    <aside>
+      <img
+        src="design/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        alt="food"
+        class="banner"
+      />
+    </aside>
+
+    <main class="menu">
+      <div class="menu__title">
+        <h1 class="title title--font">Le délice des sens</h1>
+        <div class="heart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 24 26"
+            class="heart__empty"
+          >
+            <path
+              d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+              stroke-width="2"
+              stroke="black"
+              stroke-opacity="0.7"
+              fill="none"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 24 26"
+            class="heart__full"
+          >
+            <path
+              d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+              fill="url(#gradient)"
+            />
+            <defs>
+              <linearGradient id="gradient" gradientTransform="rotate(90)">
+                <stop offset="0%" stop-color="#9356dc" />
+                <stop offset="100%" stop-color="#ff79da" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="title title--light title--underline">Entrées</h2>
+        <ul>
+          <li class="food food--anim1">
+            <div class="food__text">
+              <h3 class="text--big">Tartare de thon</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Assaisonné au yuzu</p>
+                <p class="text--gray">25€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+          <li class="food food--anim2">
+            <div class="food__text">
+              <h3 class="text--big">Bouchée de homard croustillant</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">
+                  Et sa farandole de petits légumes
+                </p>
+                <p class="text--gray">35€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+          <li class="food food--anim3">
+            <div class="food__text">
+              <h3 class="text--big">Velouté de cèpes</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Aux truffes</p>
+                <p class="text--gray">20€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="title title--light title--underline">Plats</h2>
+        <ul>
+          <li class="food food--anim1">
+            <div class="food__text">
+              <h3 class="text--big">Poulet rôti aux herbes de Provence</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Et sa crème de truffe</p>
+                <p class="text--gray">40€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+          <li class="food food--anim2">
+            <div class="food__text">
+              <h3 class="text--big">Langouste rôtie</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Et ses légumes de saison</p>
+                <p class="text--gray">35€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+          <li class="food food--anim3">
+            <div class="food__text">
+              <h3 class="text--big">Côte de boeuf Angus</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Et sa purée de panais</p>
+                <p class="text--gray">44€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="title title--light title--underline">Desserts</h2>
+        <ul>
+          <li class="food food--anim1">
+            <div class="food__text">
+              <h3 class="text--big">Farandole de desserts</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Du chef</p>
+                <p class="text--gray">18€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+          <li class="food food--anim2">
+            <div class="food__text">
+              <h3 class="text--big">Crème brulée</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">Revisitée</p>
+                <p class="text--gray">22€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+          <li class="food food--anim3">
+            <div class="food__text">
+              <h3 class="text--big">Tiramisu</h3>
+              <div class="food__info">
+                <p class="text--light text--gray">À la noisette</p>
+                <p class="text--gray">23€</p>
+              </div>
+            </div>
+            <div class="food__animation">
+              <span class="fas fa-check-circle"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <a href="/" class="button">Commander</a>
+    </main>
+
+    <footer class="footer">
+      <img src="design/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+      <ul class="footer__list">
+        <li>
+          <a href=""
+            ><span class="fas fa-utensils"></span>Proposer un restaurant</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><span class="fas fa-hands-helping"></span>Devenir partenaire</a
+          >
+        </li>
+        <li>
+          <a
+            href="
+          "
+            >Mentions légales</a
+          >
+        </li>
+        <li>
+          <a href="mailto:ohmyfood@gmail.com">Contact</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

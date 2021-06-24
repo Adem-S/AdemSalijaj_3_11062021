@@ -2,7 +2,11 @@
   background-color: $color-footer;
   padding: 1.5em;
   font-weight: 500;
-
+  @media (min-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   img {
     filter: invert(100%) sepia(7%) saturate(26%) hue-rotate(146deg)
       brightness(105%) contrast(106%);

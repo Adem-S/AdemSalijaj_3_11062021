@@ -25,8 +25,32 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #f2f2f2;
+}
+
+@media (min-width: 375px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 450px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    font-size: 30px;
+  }
 }
 
 .button {
@@ -58,17 +82,20 @@ body {
 .title {
   font-size: 1.6em;
   font-weight: 700;
-  padding: 0.5em 0;
+  padding-bottom: 1em;
 }
 
 .title--font {
   font-family: "Shrikhand";
+  padding: 0.5em 0;
 }
 
 .title--light {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1.2em;
+  padding: 0.5em 0;
+  opacity: 0.8;
 }
 
 .title--underline {
@@ -140,6 +167,24 @@ body {
   z-index: -1;
   margin-bottom: -1.5em;
   height: 16em;
+}
+
+@media (min-width: 450px) {
+  .banner {
+    height: 20em;
+  }
+}
+
+@media (min-width: 700px) {
+  .banner {
+    height: 28em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    height: 34em;
+  }
 }
 
 .text {
@@ -254,7 +299,11 @@ body {
 }
 
 section {
-  padding: 1em;
+  padding: 1em 1em;
+}
+
+.section--home {
+  padding: 2em 1em;
 }
 
 .section--white {
@@ -272,8 +321,6 @@ section {
   position: relative;
   border-radius: 5em;
   margin-bottom: 1em;
-  -webkit-box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -284,14 +331,39 @@ section {
      object-fit: cover;
 }
 
+@media (min-width: 450px) {
+  .card img {
+    height: 20em;
+  }
+}
+
+@media (min-width: 450px) {
+  .card img {
+    height: 20em;
+  }
+}
+
+@media (min-width: 700px) {
+  .card img {
+    height: 25em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card img {
+    height: 35em;
+  }
+}
+
 .card--new::before {
   content: "Nouveau";
-  color: green;
+  color: #0b8f72;
+  font-size: 0.8em;
   background: #99e2d0;
   position: absolute;
-  right: 5%;
-  top: 5%;
-  padding: 0.3em 0.5em;
+  right: calc(0% + 1em);
+  top: calc(0% + 1em);
+  padding: 0.4em 0.8em;
   border-radius: 0.2em;
   font-weight: 500;
 }
@@ -309,6 +381,8 @@ section {
   width: 100%;
   border-radius: 0 0 1em 1em;
   padding: 1em 1em;
+  -webkit-box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .card__info p {
@@ -511,6 +585,21 @@ section {
   font-weight: 500;
 }
 
+@media (min-width: 800px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer img {
   -webkit-filter: invert(100%) sepia(7%) saturate(26%) hue-rotate(146deg) brightness(105%) contrast(106%);
           filter: invert(100%) sepia(7%) saturate(26%) hue-rotate(146deg) brightness(105%) contrast(106%);
@@ -562,7 +651,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
   font-weight: 500;
 }
 

@@ -1,9 +1,17 @@
 .menu {
   border-radius: 2em 2em 0 0;
   background-color: $color-background;
+  @media (min-width: 700px) {
+    .heart {
+      margin-left: 2em;
+    }
+  }
   &__title {
     display: flex;
     padding: 1em;
     align-items: center;
+    @media (min-width: 700px) {
+      justify-content: center;
+    }
   }
 }

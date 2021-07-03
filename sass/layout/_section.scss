@@ -6,6 +6,18 @@ section {
   padding: 2em 1em;
 }
 
+.section__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  @media (min-width: 700px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+}
+
 .section--white {
   background-color: white;
 }

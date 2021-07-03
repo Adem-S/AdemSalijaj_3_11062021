@@ -3,12 +3,14 @@
   background-color: white;
   border-radius: 1em;
   cursor: pointer;
-  margin-top: 1em;
   overflow: hidden;
   animation: appear 1s ease-in-out forwards;
   opacity: 0;
   width: 100%;
   flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 1em;
   @include box-shadow;
 }
 
